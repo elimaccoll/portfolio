@@ -1,0 +1,26 @@
+section {
+  padding: 5px;
+}
+
+.hero-btn {
+  border: 2px solid black;
+}
+
+.hero-btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+#resume-section {
+  background: rgb(255, 0, 215);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 215, 1) 0%,
+    rgba(0, 211, 255, 1) 0%,
+    rgba(255, 0, 246, 1) 100%
+  );
+}
+#resume-btn {
+  border: 2px solid black;
+}
