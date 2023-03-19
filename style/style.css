@@ -1,18 +1,75 @@
-section {
-  padding: 5px;
+html {
+  scroll-behavior: smooth;
 }
 
-.hero-btn {
+.wrapper {
+  background-image: linear-gradient(to bottom, darkblue, darkorchid);
+}
+
+/* Sections */
+.section {
+  padding: 50px 200px 50px 200px;
+}
+
+.section-main {
+  min-height: 100vh;
+}
+
+.section-minor {
+  min-height: 20vh;
+}
+
+/* Hero */
+#hero {
+  display: grid;
+  place-items: center;
+}
+
+/* General */
+
+/* Buttons */
+.dark-btn {
   border: 2px solid black;
+  width: 150px;
 }
 
-.hero-btn:hover {
+.dark-btn:hover {
   background-color: white;
   color: black;
+}
+
+.light-btn {
+  border: 2px solid black;
+  width: 150px;
+}
+
+.light-btn:hover {
+  background-color: black;
+  color: white;
   border: 2px solid black;
 }
 
-#resume-section {
+/* Border Radius */
+.border-radius-20 {
+  border-radius: 20px;
+}
+.border-radius-bot-20 {
+  border-radius: 0 0 20px 20px;
+}
+
+/* Font Sizes */
+.font-responsive-lg {
+  font-size: max(6vw, 50px);
+}
+.font-responsive-md {
+  font-size: max(2vw, 20px);
+}
+.font-responsive-sm {
+  font-size: max(1vw, 20px);
+}
+
+/* Background Color */
+.bg-blue-to-pink {
   background: rgb(255, 0, 215);
   background: linear-gradient(
     90deg,
@@ -21,6 +78,22 @@ section {
     rgba(255, 0, 246, 1) 100%
   );
 }
-#resume-btn {
-  border: 2px solid black;
+
+.bg-blue-to-blue {
+  background: rgb(0, 104, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 104, 255, 1) 0%,
+    rgba(50, 175, 255, 1) 100%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+
+.bg-blue {
+  background-color: cornflowerblue;
+}
+
+/* Border */
+.border-right {
+  border-right: 1px solid lightskyblue;
 }

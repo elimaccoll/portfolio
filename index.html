@@ -6,34 +6,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="vendors/bootstrap.min.css" />
     <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="scripts/script.js" defer></script>
     <title>Eli MacColl - Software Engineer</title>
   </head>
   <body>
-    <section class="text-dark border p-5">
-      <h1>ELI MACCOLL</h1>
-      <p>FULL-STACK SOFTWARE ENGINEER</p>
-      <button type="button" class="btn btn-primary hero-btn">ABOUT ME</button>
-      <button type="button" class="btn btn-primary hero-btn">CONTACT ME</button>
-    </section>
-    <section id="resume-section" class="bg-info text-light p-5">
-      <div class="row">
-        <div class="col-sm-10 col-12">
-          I am an enthusiastic developer with a passion for technology. I love
-          learning new skills and exploring the latest tools and techniques in
-          engineering.
-        </div>
-        <div class="col-sm-2 col-12 pt-sm-0 pt-3">
-          <button type="button" id="resume-btn" class="btn btn-light">
-            RESUME
-          </button>
+    <div class="container-fluid p-0">
+      <div class="wrapper p-2">
+        <div class="bg-white border-radius-20">
+          <section id="hero" class="section-main text-black">
+            <div class="text-center">
+              <div>
+                <h1 class="font-responsive-lg">ELI MACCOLL</h1>
+                <h2 class="font-responsive-md">SOFTWARE ENGINEER</h2>
+              </div>
+              <div
+                class="pt-5 d-flex flex-column flex-lg-row gap-2 justify-content-center align-items-center"
+              >
+                <div class="">
+                  <button
+                    type="button"
+                    class="btn btn-primary dark-btn"
+                    onclick="jumpToAnchor('about-me')"
+                  >
+                    ABOUT ME
+                  </button>
+                </div>
+                <div class="">
+                  <button
+                    type="button"
+                    class="btn btn-primary dark-btn"
+                    onclick="jumpToAnchor('contact-me')"
+                  >
+                    CONTACT ME
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="section-minor text-white bg-blue-to-blue row d-flex align-items-center m-0 p-5"
+          >
+            <p class="col-lg-8 col-12 font-responsive-sm">
+              I am an enthusiastic developer with a passion for technology. I
+              love learning new skills and exploring the latest tools and
+              techniques in the industry.
+            </p>
+            <div class="col-lg-4 col-12 text-center">
+              <button
+                type="button"
+                id="resume-btn"
+                class="btn btn-light light-btn border-black"
+                onclick="window.open('resume.html', '_blank')"
+              >
+                RESUME
+              </button>
+            </div>
+          </section>
+          <section class="section-main">
+            <div class="d-flex justify-content-between align-items-center">
+              <h2>PROJECTS</h2>
+              <button
+                id="github-btn"
+                type="button"
+                class="btn btn-primary"
+                onclick="window.open('https://github.com/elimaccoll', '_blank')"
+              >
+                GITHUB
+              </button>
+            </div>
+          </section>
+          <section class="section-minor bg-blue-to-blue text-light">
+            <div class="row d-none d-md-flex">
+              <div class="col-6 border-right">
+                <h2 class="text-light">SKILLS</h2>
+                Here are some of the languages and technologies I have
+                experience with.
+              </div>
+              <div class="col-3 text-center border-right">
+                <p>Typescript</p>
+                <p>Python</p>
+                <p>Java</p>
+                <p>C/C++</p>
+                <p>Linux</p>
+              </div>
+              <div class="col-3 text-center">
+                <p>React</p>
+                <p>Redis</p>
+                <p>Redux</p>
+                <p>Node.js</p>
+                <p>Express.js</p>
+                <p>MongoDB</p>
+              </div>
+            </div>
+            <div class="d-md-none d-block">
+              <div>
+                <h2 class="text-light">SKILLS</h2>
+                Here are some of the languages and technologies I have
+                experience with.
+              </div>
+              <div class="row py-3">
+                <hr />
+                <div class="col-6 text-center">
+                  <p>Typescript</p>
+                  <p>Python</p>
+                  <p>Java</p>
+                  <p>C/C++</p>
+                  <p>Linux</p>
+                </div>
+                <div class="col-6 text-center">
+                  <p>React</p>
+                  <p>Redis</p>
+                  <p>Redux</p>
+                  <p>Node.js</p>
+                  <p>Express.js</p>
+                  <p>MongoDB</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="about-me" class="section-main">
+            <h2>ABOUT ME</h2>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              exercitationem quibusdam totam ducimus esse, suscipit cupiditate
+              debitis ut laborum veniam soluta? Debitis, recusandae fugiat natus
+              eveniet esse sequi, placeat nostrum id, repellendus aliquam
+              mollitia quis fuga numquam sint totam. Repellat asperiores
+              possimus, similique corporis facilis tenetur praesentium saepe
+              autem eius? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Optio exercitationem quibusdam totam ducimus esse, suscipit
+              cupiditate debitis ut laborum veniam soluta? Debitis, recusandae
+              fugiat natus eveniet esse sequi, placeat nostrum id, repellendus
+              aliquam mollitia quis fuga numquam sint totam. Repellat asperiores
+              possimus, similique corporis facilis tenetur praesentium saepe
+              autem eius?
+            </div>
+          </section>
+          <section
+            id="contact-me"
+            class="section-main bg-primary border-radius-bot-20"
+          >
+            <h2 class="text-light">CONTACT</h2>
+            <div class="row text-white pb-3">
+              <div class="col-lg-8 col-12">
+                <p>
+                  Interested in working together? Let's connect via email or
+                  LinkedIn
+                </p>
+              </div>
+              <div
+                class="col-lg-4 col-12 d-flex gap-3 justify-content-lg-end align-items-center"
+              >
+                <i class="fa fa-linkedin-square" style="font-size: 48px"></i>
+                <i class="fa fa-envelope" style="font-size: 48px"></i>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-6 col-12 d-flex flex-column gap-3">
+                <input
+                  type="text"
+                  class="form-control bg-dark text-white"
+                  placeholder="Name"
+                />
+                <input
+                  type="email"
+                  class="form-control bg-dark text-white"
+                  aria-describedby="emailHelp"
+                  placeholder="Email"
+                />
+                <input
+                  type="text"
+                  class="form-control bg-dark text-white"
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                <textarea
+                  class="form-control bg-dark text-white"
+                  placeholder="Message"
+                  rows="6"
+                ></textarea>
+              </div>
+            </div>
+            <div class="text-end pt-3">
+              <button id="github-btn" type="button" class="btn btn-info">
+                SEND
+              </button>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
-    <section class="p-5">
-      <div class="d-flex justify-content-between align-items-center">
-        <h2>PROJECTS</h2>
-        <button type="button" class="btn btn-primary">GITHUB</button>
-      </div>
-    </section>
+    </div>
   </body>
 </html>
