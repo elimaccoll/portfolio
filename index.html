@@ -6,27 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="vendors/bootstrap.min.css" />
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/grid.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="scripts/grid.js" defer></script>
     <script src="scripts/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+
     <title>Eli MacColl - Software Engineer</title>
   </head>
   <body>
-    <div class="container-fluid p-0">
-      <div class="wrapper p-2">
-        <div class="bg-white border-radius-20">
+    <div class="wrapper">
+      <div id="tiles-container" class="d-none d-md-grid">
+        <div id="tiles"></div>
+      </div>
+      <div class="container content">
+        <div class="bg-white">
           <section id="hero" class="section-main text-black">
             <div class="text-center">
               <div>
-                <h1 class="font-responsive-lg">ELI MACCOLL</h1>
+                <h1 id="hero-name" class="font-responsive-lg">ELI MACCOLL</h1>
                 <h2 class="font-responsive-md">SOFTWARE ENGINEER</h2>
               </div>
               <div
-                class="pt-5 d-flex flex-column flex-lg-row gap-2 justify-content-center align-items-center"
+                class="p-5 d-flex flex-column flex-lg-row gap-2 justify-content-center align-items-center"
               >
-                <div class="">
+                <div>
                   <button
                     type="button"
                     class="btn btn-primary dark-btn"
@@ -35,7 +42,7 @@
                     ABOUT ME
                   </button>
                 </div>
-                <div class="">
+                <div>
                   <button
                     type="button"
                     class="btn btn-primary dark-btn"
@@ -50,37 +57,57 @@
           <section
             class="section-minor text-white bg-blue-to-blue row d-flex align-items-center m-0 p-5"
           >
-            <p class="col-lg-8 col-12 font-responsive-sm">
-              I am an enthusiastic developer with a passion for technology. I
-              love learning new skills and exploring the latest tools and
-              techniques in the industry.
-            </p>
-            <div class="col-lg-4 col-12 text-center">
-              <button
-                type="button"
-                id="resume-btn"
-                class="btn btn-light light-btn border-black"
-                onclick="window.open('resume.html', '_blank')"
-              >
-                RESUME
-              </button>
+            <div class="section-wrapper">
+              <p class="col-lg-8 col-12 font-responsive-sm">
+                I am an enthusiastic developer with a passion for technology. I
+                love learning new skills and exploring the latest tools and
+                techniques in the industry.
+              </p>
+              <div class="col-lg-4 col-12 text-center">
+                <button
+                  type="button"
+                  id="resume-btn"
+                  class="btn btn-light light-btn border-black"
+                  onclick="window.open('resume.html', '_blank')"
+                >
+                  RESUME
+                </button>
+              </div>
             </div>
           </section>
-          <section class="section-main">
+          <section class="section-main p-5">
             <div class="d-flex justify-content-between align-items-center">
               <h2>PROJECTS</h2>
               <button
                 id="github-btn"
                 type="button"
-                class="btn btn-primary"
+                class="btn btn-primary dark-btn"
                 onclick="window.open('https://github.com/elimaccoll', '_blank')"
               >
                 GITHUB
               </button>
             </div>
+            <div class="pt-3 d-flex flex-column gap-4">
+              <div class="row gap-4 gap-lg-0">
+                <div class="col-lg-8">
+                  <div id="project-1" class="col-lg-12 project-card">Main</div>
+                </div>
+                <div class="col-lg-4">
+                  <div id="project-2" class="col-lg-12 project-card">Side</div>
+                </div>
+              </div>
+              <div class="row gap-4 gap-lg-0">
+                <div class="col-lg-4">
+                  <div id="project-3" class="col-lg-12 project-card">Side</div>
+                </div>
+                <div class="col-lg-8">
+                  <div id="project-4" class="col-lg-12 project-card">Main</div>
+                </div>
+              </div>
+            </div>
           </section>
           <section class="section-minor bg-blue-to-blue text-light">
-            <div class="row d-none d-md-flex">
+            <div class="row d-none d-md-flex m-0">
               <div class="col-6 border-right">
                 <h2 class="text-light">SKILLS</h2>
                 Here are some of the languages and technologies I have
@@ -108,7 +135,7 @@
                 Here are some of the languages and technologies I have
                 experience with.
               </div>
-              <div class="row py-3">
+              <div class="row py-3 m-0">
                 <hr />
                 <div class="col-6 text-center">
                   <p>Typescript</p>
@@ -146,12 +173,9 @@
               autem eius?
             </div>
           </section>
-          <section
-            id="contact-me"
-            class="section-main bg-primary border-radius-bot-20"
-          >
+          <section id="contact-me" class="section-main bg-primary">
             <h2 class="text-light">CONTACT</h2>
-            <div class="row text-white pb-3">
+            <div class="row text-white pb-3 m-0">
               <div class="col-lg-8 col-12">
                 <p>
                   Interested in working together? Let's connect via email or
@@ -165,7 +189,7 @@
                 <i class="fa fa-envelope" style="font-size: 48px"></i>
               </div>
             </div>
-            <div class="form-group row">
+            <div class="form-group row m-0">
               <div class="col-lg-6 col-12 d-flex flex-column gap-3">
                 <input
                   type="text"

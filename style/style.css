@@ -1,14 +1,28 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .wrapper {
-  background-image: linear-gradient(to bottom, darkblue, darkorchid);
+  /* background: rgb(20, 20, 20); */
+}
+
+.container {
+  /* border: 5px solid black; */
+  padding: 0px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Sections */
 .section {
-  padding: 50px 200px 50px 200px;
+}
+.section-wrapper {
+  /* margin-left: 300px;
+  margin-right: 300px; */
 }
 
 .section-main {
@@ -25,7 +39,24 @@ html {
   place-items: center;
 }
 
+/* Projects */
+.project-card {
+  border: 3px solid black;
+  border-radius: 10px;
+  height: max(40vh, 300px);
+}
+
+#project-1 {
+  background-image: url("../assets/project-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
 /* General */
+
+/* Padding */
 
 /* Buttons */
 .dark-btn {
@@ -50,6 +81,9 @@ html {
 }
 
 /* Border Radius */
+.border-radius-10 {
+  border-radius: 10px;
+}
 .border-radius-20 {
   border-radius: 20px;
 }
