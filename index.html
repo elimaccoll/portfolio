@@ -20,7 +20,11 @@
       <div class="background"></div>
       <div class="container content">
         <div class="bg-white">
-          <section id="hero" class="section-main text-black">
+          <section
+            id="hero"
+            class="section-main text-black d-flex flex-column justify-content-between"
+          >
+            <div></div>
             <div class="text-center">
               <div>
                 <h1 id="hero-name" class="font-responsive-lg">ELI MACCOLL</h1>
@@ -49,9 +53,18 @@
                 </div>
               </div>
             </div>
+            <div class="mb-5">
+              <i
+                class="fa fa-arrow-down"
+                id="down-arrow"
+                style="font-size: 48px"
+                onclick="jumpToAnchor('resume')"
+              ></i>
+            </div>
           </section>
           <section
             class="section-minor text-white bg-blue-to-blue row d-flex align-items-center m-0 p-5"
+            id="resume"
           >
             <div class="section-wrapper row">
               <div class="col-lg-8 col-12 font-responsive-sm">
