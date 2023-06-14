@@ -158,6 +158,8 @@ body {
   border-right: 1px solid lightskyblue;
 }
 
+/* TODO: ORGANIZE NEW STYLES */
+
 .floating {
   animation-name: floating;
   animation-duration: 3s;
@@ -188,4 +190,10 @@ body {
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
   animation-play-state: paused;
+}
+
+.skill-list > p:hover {
+  cursor: default;
+  color: black;
+  background-color: lightsteelblue;
 }
