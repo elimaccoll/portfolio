@@ -197,3 +197,7 @@ section {
   color: black;
   background-color: lightsteelblue;
 }
+
+.clickable-icon {
+  cursor: pointer;
+}

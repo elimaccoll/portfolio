@@ -1,9 +1,11 @@
+// Jump to helper
 function jumpToAnchor(anchor) {
   const loc = document.location.toString().split("#")[0];
   document.location = loc + "#" + anchor;
   return;
 }
 
+// Onload hero name scramble effect
 const heroNameElem = document.getElementById("hero-name");
 const finalName = "ELI MACCOLL";
 const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -21,3 +23,5 @@ const interval = setInterval(() => {
   if (iter >= finalName.length) clearInterval(interval);
   iter += 1 / 4;
 }, 40);
+
+// Contact buttons
