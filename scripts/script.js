@@ -24,4 +24,30 @@ const interval = setInterval(() => {
   iter += 1 / 4;
 }, 40);
 
-// Contact buttons
+// Contact form
+document.getElementById("contact-send").addEventListener("click", (e) => {
+  e.preventDefault();
+  const emailTo = "elimaccoll@gmail.com";
+  const emailName = document.getElementById("contact-name");
+  const emailMessage = document.getElementById("contact-message");
+  const emailSubject = document.getElementById("contact-subject");
+
+  const emailBody = encodeURIComponent(
+    `${emailName.value}\r\n\r\n${emailMessage.value}`
+  );
+
+  location.href =
+    "mailto:" +
+    emailTo +
+    "?subject=" +
+    emailSubject.value +
+    "&body=" +
+    emailBody;
+
+  emailName.value = "";
+  emailMessage.value = "";
+  emailSubject.value = "";
+  const sentMessage =
+    "Thanks for reaching out! I'll get back to you as soon as possible!";
+  document.getElementById("contact-sent").textContent = sentMessage;
+});

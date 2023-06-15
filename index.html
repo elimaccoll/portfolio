@@ -12,7 +12,7 @@
     />
     <script src="scripts/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>Eli MacColl - Software Engineer</title>
   </head>
   <body>
@@ -176,7 +176,7 @@
                 It's also important to mention that I adopted an adorable and
                 excitable kitten named Archer who enjoys meowing very loudly in
                 the middle of the night, attacking any shoe that dares to
-                challenge him, drinking straight from the facuet, and playing
+                challenge him, drinking straight from the faucet, and playing
                 with springs.
               </p>
               <div class="row">
@@ -199,38 +199,37 @@
               <div
                 class="d-sm-flex d-block flex-column flex-sm-row justify-content-between align-items-center"
               >
-                <p class="m-0">Feel free to reach out!</p>
+                <h5 class="m-0 text-white d-none d-sm-inline">
+                  Feel free to reach out!
+                </h5>
                 <div class="d-flex gap-3 align-items-end">
                   <i
                     class="fa fa-linkedin-square clickable-icon"
                     style="font-size: 48px"
                     onclick="window.open('https://www.linkedin.com/in/elimaccoll/', '_blank')"
                   ></i>
-                  <i
-                    class="fa fa-envelope clickable-icon"
-                    style="font-size: 51px"
-                    onclick="window.open('https://www.linkedin.com/in/elimaccoll/', '_blank')"
-                  ></i>
+                  <a href="mailto:elimaccoll@gmail.com" class="text-white">
+                    <i
+                      class="fa fa-envelope clickable-icon"
+                      style="font-size: 51px"
+                    ></i>
+                  </a>
                 </div>
               </div>
             </div>
             <div class="form-group row">
-              <div class="col-lg-6 col-12 d-flex flex-column gap-4">
+              <div class="col-lg-6 col-12 d-flex flex-column gap-3">
                 <input
                   type="text"
                   class="form-control bg-dark text-white"
                   placeholder="Name"
-                />
-                <input
-                  type="email"
-                  class="form-control bg-dark text-white"
-                  aria-describedby="emailHelp"
-                  placeholder="Email"
+                  id="contact-name"
                 />
                 <input
                   type="text"
                   class="form-control bg-dark text-white"
                   placeholder="Subject"
+                  id="contact-subject"
                 />
               </div>
               <div class="col-lg-6 col-12 pt-lg-0 pt-3">
@@ -239,12 +238,16 @@
                   placeholder="Message"
                   rows="7"
                   style="resize: none"
+                  id="contact-message"
                 ></textarea>
               </div>
             </div>
             <div class="text-end pt-3">
-              <button type="button" class="btn btn-info">SEND</button>
+              <button type="button" class="btn btn-info" id="contact-send">
+                SEND
+              </button>
             </div>
+            <h4 class="text-white mt-5 text-center" id="contact-sent"></h4>
           </section>
         </div>
       </div>
