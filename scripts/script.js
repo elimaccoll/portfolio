@@ -1,8 +1,9 @@
-// Jump to helper
-function jumpToAnchor(anchor) {
-  const loc = document.location.toString().split("#")[0];
-  document.location = loc + "#" + anchor;
-  return;
+function scrollSmoothTo(elementId) {
+  var element = document.getElementById(elementId);
+  element.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
 }
 
 // Onload hero name scramble effect
