@@ -38,7 +38,8 @@
 #skills ul {
   display: flex;
   list-style-type: none;
-  gap: 30px;
+  /* Space between skill logos */
+  gap: 50px;
 }
 #skills li {
   display: flex;
