@@ -8,4 +8,5 @@
 [ ] - style the scroll bar
 [ ] - scroll animation using intersection
 [ ] - "badges" / containers for skill icons?
-[ ] - change whole color scheme? just blue-to-blue sections?
+[ ] - change whole color scheme? just blue-to-blue sections? gradient background?
+[ ] - fix skills fitting on small screens

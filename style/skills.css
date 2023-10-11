@@ -2,7 +2,6 @@
   /* width: 150px;
   height: 150px; */
   width: 100%;
-  min-width: 50px;
   filter: drop-shadow(5px 5px 5px black);
 }
 #skills img:hover {
@@ -43,7 +42,7 @@
   display: flex;
   list-style-type: none;
   /* Space between skill logos */
-  gap: 50px;
+  gap: 40px;
 }
 #skills li {
   display: flex;
@@ -51,6 +50,7 @@
   align-items: center;
   /* Skill icon container */
   cursor: pointer;
+  position: relative;
 }
 
 /* Animation */
@@ -85,7 +85,7 @@
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  top: -30px;
+  top: -40px;
 }
 
 #skills li:hover .tooltiptext {
