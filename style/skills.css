@@ -92,3 +92,17 @@
   visibility: visible;
   user-select: none;
 }
+
+/* For below medium screens */
+#skills-sm img {
+  width: 50px;
+}
+
+.skill-item {
+  position: relative;
+}
+.skill-item:hover .tooltiptext {
+  visibility: visible;
+  user-select: none;
+  left: -25px;
+}

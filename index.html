@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/skills.css" />
     <link rel="stylesheet" href="style/trail.css" />
-    <link rel="stylesheet" href="style/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -123,147 +122,225 @@
           <section class="section-minor bg-blue-to-blue py-5" id="skills">
             <div class="px-5 pb-2">
               <h2 class="text-light">SKILLS</h2>
-              <p class="d-none d-lg-inline text-black font-responsive-sm">
-                Here are some of the languages and technologies I have
-                experience with.
-              </p>
-            </div>
-            <div class="skills-caro py-3" id="skills-top">
-              <div>
-                <ul>
-                  <li>
-                    <img src="/assets/skills/html.svg" alt="HTML logo" />
-                    <span class="tooltiptext">HTML</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/css.svg" alt="CSS logo" />
-                    <span class="tooltiptext">CSS</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/javascript.svg" alt="JS logo" />
-                    <span class="tooltiptext">JavaScript</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/typescript.svg" alt="TS logo" />
-                    <span class="tooltiptext">TypeScript</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/python.svg" alt="Python logo" />
-                    <span class="tooltiptext">Python</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/java.svg" alt="Java logo" />
-                    <span class="tooltiptext">Java</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/cplusplus.svg" alt="C++ logo" />
-                    <span class="tooltiptext">C/C++</span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul>
-                  <li>
-                    <img src="/assets/skills/html.svg" alt="HTML logo" />
-                    <span class="tooltiptext">HTML</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/css.svg" alt="CSS logo" />
-                    <span class="tooltiptext">CSS</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/javascript.svg" alt="JS logo" />
-                    <span class="tooltiptext">JavaScript</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/typescript.svg" alt="TS logo" />
-                    <span class="tooltiptext">TypeScript</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/python.svg" alt="Python logo" />
-                    <span class="tooltiptext">Python</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/java.svg" alt="Java logo" />
-                    <span class="tooltiptext">Java</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/cplusplus.svg" alt="C++ logo" />
-                    <span class="tooltiptext">C/C++</span>
-                  </li>
-                </ul>
+              <!-- TODO: decide how to work in this text -->
+              <div class="text-center d-none">
+                <p class="d-md-none d-inline text-black font-responsive-sm">
+                  Here are some of the languages and technologies I have
+                  experience with.
+                </p>
               </div>
             </div>
-            <div class="skills-caro pt-3" id="skills-bot">
-              <div>
-                <ul>
-                  <li>
-                    <img src="/assets/skills/react.svg" alt="React logo" />
-                    <span class="tooltiptext">React</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/nodejs.svg" alt="NodeJS logo" />
-                    <span class="tooltiptext">NodeJS</span>
-                  </li>
-                  <li>
-                    <img
-                      src="/assets/skills/bootstrap.svg"
-                      alt="Bootstrap logo"
-                    />
-                    <span class="tooltiptext">Bootstrap</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/mongodb.svg" alt="MongoDB logo" />
-                    <span class="tooltiptext">MongoDB</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/sql.svg" alt="SQL logo" />
-                    <span class="tooltiptext">SQL</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/redis.svg" alt="Redis logo" />
-                    <span class="tooltiptext">Redis</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/redux.svg" alt="Redux logo" />
-                    <span class="tooltiptext">Redux</span>
-                  </li>
-                </ul>
+            <!-- Skills section for below medium screens -->
+            <div class="d-inline d-md-none" id="skills-sm">
+              <div
+                class="d-flex flex-wrap justify-content-around align-items-center gap-3 px-3"
+              >
+                <div class="skill-item">
+                  <img src="/assets/skills/html.svg" alt="HTML logo" />
+                  <span class="tooltiptext">HTML</span>
+                </div>
+                <div class="skill-item">
+                  <img src="/assets/skills/css.svg" alt="CSS logo" />
+                  <span class="tooltiptext">CSS</span>
+                </div>
+                <div class="skill-item">
+                  <img src="/assets/skills/javascript.svg" alt="JS logo" />
+                  <span class="tooltiptext">JavaScript</span>
+                </div>
+                <div class="skill-item">
+                  <img src="/assets/skills/typescript.svg" alt="TS logo" />
+                  <span class="tooltiptext">TypeScript</span>
+                </div>
+                <div class="skill-item">
+                  <img src="/assets/skills/python.svg" alt="Python logo" />
+                  <span class="tooltiptext">Python</span>
+                </div>
+                <div class="skill-item">
+                  <img src="/assets/skills/java.svg" alt="Java logo" />
+                  <span class="tooltiptext">Java</span>
+                </div>
+                <div class="skill-item">
+                  <img src="/assets/skills/cplusplus.svg" alt="C++ logo" />
+                  <span class="tooltiptext">C/C++</span>
+                </div>
+                <div class="skill-item">
+                  <img src="/assets/skills/react.svg" alt="React logo" />
+                  <span class="tooltiptext">React</span>
+                </div>
+                <div class="skill-item">
+                  <img src="/assets/skills/nodejs.svg" alt="NodeJS logo" />
+                  <span class="tooltiptext">NodeJS</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="/assets/skills/bootstrap.svg"
+                    alt="Bootstrap logo"
+                  />
+                  <span class="tooltiptext">Bootstrap</span>
+                </div>
+                <div class="skill-item">
+                  <img src="/assets/skills/mongodb.svg" alt="MongoDB logo" />
+                  <span class="tooltiptext">MongoDB</span>
+                </div>
+                <div class="skill-item">
+                  <img src="/assets/skills/sql.svg" alt="SQL logo" />
+                  <span class="tooltiptext">SQL</span>
+                </div>
+                <div class="skill-item">
+                  <img src="/assets/skills/redis.svg" alt="Redis logo" />
+                  <span class="tooltiptext">Redis</span>
+                </div>
+                <div class="skill-item">
+                  <img src="/assets/skills/redux.svg" alt="Redux logo" />
+                  <span class="tooltiptext">Redux</span>
+                </div>
               </div>
-              <div>
-                <ul>
-                  <li>
-                    <img src="/assets/skills/react.svg" alt="React logo" />
-                    <span class="tooltiptext">React</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/nodejs.svg" alt="NodeJS logo" />
-                    <span class="tooltiptext">NodeJS</span>
-                  </li>
-                  <li>
-                    <img
-                      src="/assets/skills/bootstrap.svg"
-                      alt="Bootstrap logo"
-                    />
-                    <span class="tooltiptext">Bootstrap</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/mongodb.svg" alt="MongoDB logo" />
-                    <span class="tooltiptext">MongoDB</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/sql.svg" alt="SQL logo" />
-                    <span class="tooltiptext">SQL</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/redis.svg" alt="Redis logo" />
-                    <span class="tooltiptext">Redis</span>
-                  </li>
-                  <li>
-                    <img src="/assets/skills/redux.svg" alt="Redux logo" />
-                    <span class="tooltiptext">Redux</span>
-                  </li>
-                </ul>
+            </div>
+
+            <div class="d-none d-md-inline">
+              <div class="skills-caro py-3" id="skills-top">
+                <div>
+                  <ul>
+                    <li>
+                      <img src="/assets/skills/html.svg" alt="HTML logo" />
+                      <span class="tooltiptext">HTML</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/css.svg" alt="CSS logo" />
+                      <span class="tooltiptext">CSS</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/javascript.svg" alt="JS logo" />
+                      <span class="tooltiptext">JavaScript</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/typescript.svg" alt="TS logo" />
+                      <span class="tooltiptext">TypeScript</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/python.svg" alt="Python logo" />
+                      <span class="tooltiptext">Python</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/java.svg" alt="Java logo" />
+                      <span class="tooltiptext">Java</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/cplusplus.svg" alt="C++ logo" />
+                      <span class="tooltiptext">C/C++</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>
+                      <img src="/assets/skills/html.svg" alt="HTML logo" />
+                      <span class="tooltiptext">HTML</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/css.svg" alt="CSS logo" />
+                      <span class="tooltiptext">CSS</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/javascript.svg" alt="JS logo" />
+                      <span class="tooltiptext">JavaScript</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/typescript.svg" alt="TS logo" />
+                      <span class="tooltiptext">TypeScript</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/python.svg" alt="Python logo" />
+                      <span class="tooltiptext">Python</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/java.svg" alt="Java logo" />
+                      <span class="tooltiptext">Java</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/cplusplus.svg" alt="C++ logo" />
+                      <span class="tooltiptext">C/C++</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="skills-caro pt-3" id="skills-bot">
+                <div>
+                  <ul>
+                    <li>
+                      <img src="/assets/skills/react.svg" alt="React logo" />
+                      <span class="tooltiptext">React</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/nodejs.svg" alt="NodeJS logo" />
+                      <span class="tooltiptext">NodeJS</span>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/skills/bootstrap.svg"
+                        alt="Bootstrap logo"
+                      />
+                      <span class="tooltiptext">Bootstrap</span>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/skills/mongodb.svg"
+                        alt="MongoDB logo"
+                      />
+                      <span class="tooltiptext">MongoDB</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/sql.svg" alt="SQL logo" />
+                      <span class="tooltiptext">SQL</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/redis.svg" alt="Redis logo" />
+                      <span class="tooltiptext">Redis</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/redux.svg" alt="Redux logo" />
+                      <span class="tooltiptext">Redux</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>
+                      <img src="/assets/skills/react.svg" alt="React logo" />
+                      <span class="tooltiptext">React</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/nodejs.svg" alt="NodeJS logo" />
+                      <span class="tooltiptext">NodeJS</span>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/skills/bootstrap.svg"
+                        alt="Bootstrap logo"
+                      />
+                      <span class="tooltiptext">Bootstrap</span>
+                    </li>
+                    <li>
+                      <img
+                        src="/assets/skills/mongodb.svg"
+                        alt="MongoDB logo"
+                      />
+                      <span class="tooltiptext">MongoDB</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/sql.svg" alt="SQL logo" />
+                      <span class="tooltiptext">SQL</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/redis.svg" alt="Redis logo" />
+                      <span class="tooltiptext">Redis</span>
+                    </li>
+                    <li>
+                      <img src="/assets/skills/redux.svg" alt="Redux logo" />
+                      <span class="tooltiptext">Redux</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </section>

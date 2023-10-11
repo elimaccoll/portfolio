@@ -7,6 +7,6 @@
 [ ] - change padding-x for smaller screen sizes
 [ ] - style the scroll bar
 [ ] - scroll animation using intersection
-[ ] - "badges" / containers for skill icons?
 [ ] - change whole color scheme? just blue-to-blue sections? gradient background?
-[ ] - fix skills fitting on small screens
+[x] - fix skills fitting on small screens
+[ ] - something to make skills more interesting on small screen
