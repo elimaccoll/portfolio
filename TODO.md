@@ -7,3 +7,5 @@
 [ ] - change padding-x for smaller screen sizes
 [ ] - style the scroll bar
 [ ] - scroll animation using intersection
+[ ] - "badges" / containers for skill icons?
+[ ] - change whole color scheme? just blue-to-blue sections?

@@ -26,10 +26,10 @@
 
 /* Animate carousels */
 #skills-top {
-  animation: bannermove 20s linear infinite;
+  animation: bannermovereverse 20s linear infinite;
 }
 #skills-bot {
-  animation: bannermovereverse 20s linear infinite;
+  animation: bannermove 20s linear infinite;
 }
 
 /* Pause state */
@@ -49,6 +49,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Skill icon container */
+  cursor: pointer;
 }
 
 /* Animation */

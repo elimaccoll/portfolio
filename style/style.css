@@ -26,12 +26,37 @@ body::-webkit-scrollbar {
     background-position: -200% center;
   }
 }
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .background {
-  animation: background-pan 10s linear infinite;
-  background: linear-gradient(to right, var(--g1), var(--g2), var(--g1));
+  /* animation: background-pan 10s linear infinite; */
+  /* background: linear-gradient(to right, var(--g1), var(--g2), var(--g1)); */
+  /* background-size: 200%; */
   /* background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0)); */
-  background-size: 200%;
+  background: linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffe4e9,
+    #fcc8e2,
+    #f6baed,
+    #efb0ff,
+    #d3a2ff,
+    #8eb8ff,
+    #91efff,
+    #d5f9ff
+  );
+  background-size: 400% 400%;
+  animation: gradient 9s ease infinite;
   position: absolute;
   width: 100%;
   overflow: hidden;
@@ -48,19 +73,13 @@ body::-webkit-scrollbar {
 }
 
 /* Sections */
-section {
-}
-.section-wrapper {
-  /* margin-left: 300px;
-  margin-right: 300px; */
-}
-
 .section-main {
   min-height: 100vh;
 }
 
 .section-minor {
   min-height: 20vh;
+  background-color: #1e1c1e;
 }
 
 /* Hero */
