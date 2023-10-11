@@ -1,0 +1,37 @@
+.mouse-trail {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 0.8;
+  pointer-events: none;
+  filter: blur(1px);
+
+  animation-duration: 0.5s;
+  animation-name: rainbowFade;
+  animation-timing-function: ease;
+}
+
+@keyframes rainbowFade {
+  0% {
+    background: #8eb8ff;
+  }
+
+  25% {
+    background: #d3a2ff;
+  }
+
+  50% {
+    background: #efb0ff;
+  }
+
+  75% {
+    background: #f6baed;
+    opacity: 0.8;
+  }
+
+  100% {
+    background: #fcc8e2;
+    opacity: 0;
+  }
+}
