@@ -14,4 +14,4 @@ function trail(e) {
   }, 500);
 }
 
-addEventListener("mousemove", trail);
+document.getElementById("hero").addEventListener("mousemove", trail);
