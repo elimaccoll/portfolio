@@ -1,6 +1,5 @@
 :root {
-  --g1: rgb(98, 0, 234);
-  --g2: rgb(236, 64, 122);
+/* TODO: Set primary and accent colors */
 }
 
 html {
@@ -39,37 +38,20 @@ body::-webkit-scrollbar {
 }
 
 .background {
-  /* animation: background-pan 10s linear infinite; */
-  /* background: linear-gradient(to right, var(--g1), var(--g2), var(--g1)); */
-  /* background-size: 200%; */
-  /* background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0)); */
-  background: linear-gradient(
-    -45deg,
-    #ffffff,
-    #ffe4e9,
-    #fcc8e2,
-    #f6baed,
-    #efb0ff,
-    #d3a2ff,
-    #8eb8ff,
-    #91efff,
-    #d5f9ff
-  );
-  background-size: 400% 400%;
-  animation: gradient 9s ease infinite;
+  /* background-color: #30bced; */
+  background-color: #1D3666;
   position: absolute;
   width: 100%;
   overflow: hidden;
-  z-index: 0;
+  z-index: 0; */
 }
 
 .container {
-  border-left: 5px solid black;
-  border-right: 5px solid black;
-  border-bottom: 5px solid black;
+  border: 3px solid black;
+  border-top: none;
+  /* Content container width */
+  width: 100%;
   padding: 0px;
-  position: relative;
-  z-index: 1;
 }
 
 /* Sections */
@@ -110,11 +92,12 @@ body::-webkit-scrollbar {
 /* Buttons */
 .dark-btn {
   border: 2px solid black;
+  background-color: #1D3666;
   width: 150px;
 }
 
 .dark-btn:hover {
-  background-color: white;
+  background-color:#cac2c7;
   color: black;
 }
 
@@ -123,7 +106,7 @@ body::-webkit-scrollbar {
   width: 150px;
 }
 .light-btn:hover {
-  background-color: black;
+  background-color: #1D3666;
   color: white;
   border: 2px solid black;
 }
@@ -163,23 +146,29 @@ body::-webkit-scrollbar {
 }
 
 .bg-blue-to-blue {
-  background: rgb(0, 104, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 104, 255, 1) 0%,
-    rgba(50, 175, 255, 1) 100%,
-    rgba(2, 0, 36, 1) 100%
-  );
+
+  background: #9688e0;
+  background: linear-gradient(90deg, #9688e0 0%, #6E63AC 100%);
+}
+.bg-blue-to-blue-rev {
+  background: #9688e0;
+  background: linear-gradient(90deg, #6E63AC 0%, #9688e0 100%);
 }
 
-.bg-blue {
-  background-color: cornflowerblue;
+.bg-accent {
+  /* background-color: cornflowerblue; */
+  background-color: #9688e0;
+}
+.bg-accent-dark {
+  background-color: #6E63AC;
+  
 }
 
 /* Border */
 .border-right {
   border-right: 1px solid lightskyblue;
 }
+
 
 /* TODO: ORGANIZE NEW STYLES */
 
@@ -223,4 +212,7 @@ body::-webkit-scrollbar {
 
 .clickable-icon {
   cursor: pointer;
+}
+.clickable-icon:hover {
+  color: #1D3666;
 }

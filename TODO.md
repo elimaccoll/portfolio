@@ -13,3 +13,4 @@
 [ ] - hover animation for hero components (my name, sofftware dev, buttons) - maybe cursor stuff
 [ ] - pull out scripts/styling into respective files
 [ ] - see if i can simplify any styling (especially skills)
+[ ] - move resume and github button for desktop?
