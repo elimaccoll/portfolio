@@ -10,3 +10,6 @@
 [ ] - change whole color scheme? just blue-to-blue sections? gradient background?
 [x] - fix skills fitting on small screens
 [ ] - something to make skills more interesting on small screen
+[ ] - hover animation for hero components (my name, sofftware dev, buttons) - maybe cursor stuff
+[ ] - pull out scripts/styling into respective files
+[ ] - see if i can simplify any styling (especially skills)
