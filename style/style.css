@@ -1,5 +1,5 @@
 :root {
-/* TODO: Set primary and accent colors */
+  /* TODO: Set primary and accent colors */
 }
 
 html {
@@ -38,18 +38,20 @@ body::-webkit-scrollbar {
 }
 
 .background {
-  /* background-color: #30bced; */
-  background-color: #1D3666;
+  background-color: #9688e0;
+  /* #88A6E0 */
   position: absolute;
   width: 100%;
   overflow: hidden;
-  z-index: 0; */
+  z-index: 0;
 }
 
 .container {
+  background-color: #faf9f6;
   border: 3px solid black;
   border-top: none;
-  /* Content container width */
+  border-bottom: none;
+  box-shadow: lightskyblue 0px 0px 50px 50px;
   width: 100%;
   padding: 0px;
 }
@@ -92,22 +94,23 @@ body::-webkit-scrollbar {
 /* Buttons */
 .dark-btn {
   border: 2px solid black;
-  background-color: #1D3666;
+  background-color: #7260d5;
   width: 150px;
 }
 
 .dark-btn:hover {
-  background-color:#cac2c7;
+  background-color: lightskyblue;
   color: black;
 }
 
 .light-btn {
   border: 2px solid black;
+  background-color: #faf9f6;
   width: 150px;
 }
 .light-btn:hover {
-  background-color: #1D3666;
-  color: white;
+  background-color: lightskyblue;
+  color: black;
   border: 2px solid black;
 }
 
@@ -146,13 +149,12 @@ body::-webkit-scrollbar {
 }
 
 .bg-blue-to-blue {
-
   background: #9688e0;
-  background: linear-gradient(90deg, #9688e0 0%, #6E63AC 100%);
+  background: linear-gradient(90deg, #9688e0 0%, #6e63ac 100%);
 }
 .bg-blue-to-blue-rev {
   background: #9688e0;
-  background: linear-gradient(90deg, #6E63AC 0%, #9688e0 100%);
+  background: linear-gradient(90deg, #6e63ac 0%, #9688e0 100%);
 }
 
 .bg-accent {
@@ -160,15 +162,13 @@ body::-webkit-scrollbar {
   background-color: #9688e0;
 }
 .bg-accent-dark {
-  background-color: #6E63AC;
-  
+  background-color: #6e63ac;
 }
 
 /* Border */
 .border-right {
   border-right: 1px solid lightskyblue;
 }
-
 
 /* TODO: ORGANIZE NEW STYLES */
 
@@ -214,5 +214,5 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 .clickable-icon:hover {
-  color: #1D3666;
+  color: lightskyblue;
 }
