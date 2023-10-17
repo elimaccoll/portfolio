@@ -17,3 +17,14 @@
 [ ] - hover effects in general?
 [ ] - better font
 [ ] - pull out colors into custom properties
+
+---
+
+[x] - different project images based on screen size
+[x] - use project gifs instead that play gif on hover
+[ ] - on click link project to github
+[ ] - figure out project text/layout (title?)
+
+[ ] - modify CVP2 code to just be embedding images
+[ ] - CVP2 gifs with large, medium, and small base image
+[ ] - favicon

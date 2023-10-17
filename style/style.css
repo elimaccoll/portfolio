@@ -72,21 +72,6 @@ body::-webkit-scrollbar {
   place-items: center;
 }
 
-/* Projects */
-.project-card {
-  border: 3px solid black;
-  border-radius: 10px;
-  height: max(40vh, 300px);
-}
-
-#project-1 {
-  background-image: url("../assets/project-1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
-}
-
 /* General */
 
 /* Padding */

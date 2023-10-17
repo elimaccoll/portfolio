@@ -1,0 +1,16 @@
+.project-card {
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: #7260d5 0px 0px 3px 1px;
+  background-color: lavender;
+  width: 100%;
+  /* height: max(40vh, 300px); */
+  cursor: pointer;
+}
+.project-card:hover {
+  transform: scale(102%);
+}
+
+.project-card img {
+  /* border-radius: 5px; */
+}
